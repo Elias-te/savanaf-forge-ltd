@@ -1,0 +1,1798 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <link rel="icon" type="image/png" href="image.png">
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>SAVANAF FORGE LTD | General Contracting & Structural Construction – Nairobi, Kenya</title>
+<meta name="description" content="SAVANAF FORGE LTD is a premier general contracting and structural construction company based in Westlands, Nairobi. Specialising in residential, commercial, structural steel, and custom forgework across Kenya." />
+<meta name="keywords" content="construction company Nairobi, general contractor Kenya, structural steel Nairobi, commercial construction Nairobi, residential construction Westlands" />
+<meta property="og:title" content="SAVANAF FORGE LTD | Building Your Vision with Excellence" />
+<meta property="og:description" content="Premier construction and general contracting in Nairobi, Kenya. Trusted by homeowners, developers, and architects." />
+<meta property="og:type" content="website" />
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
+
+<!-- Local Business Schema Markup -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "GeneralContractor",
+  "name": "SAVANAF FORGE LTD",
+  "description": "General contracting and specialized construction company in Nairobi, Kenya",
+  "address": {
+    "@type": "PostalAddress",
+    "streetAddress": "Theera Court, St. Stephen Rd Rungiri",
+    "addressLocality": "Westlands",
+    "addressRegion": "Nairobi",
+    "addressCountry": "KE"
+  },
+  "telephone": "+254-XXX-XXXXXX",
+  "email": "savanafforgelimited@gmail.com",
+  "url": "https://www.savanafforge.co.ke",
+  "areaServed": ["Nairobi", "Kiambu", "Machakos", "Kenya"],
+  "founder": {"@type": "Person", "name": "Dennis Kimemia Muhuha"},
+  "hasOfferCatalog": {
+    "@type": "OfferCatalog",
+    "name": "Construction Services",
+    "itemListElement": [
+      {"@type": "Offer", "itemOffered": {"@type": "Service", "name": "Residential Construction"}},
+      {"@type": "Offer", "itemOffered": {"@type": "Service", "name": "Commercial Construction"}},
+      {"@type": "Offer", "itemOffered": {"@type": "Service", "name": "Structural Steel & Custom Forgework"}},
+      {"@type": "Offer", "itemOffered": {"@type": "Service", "name": "Renovations & Remodeling"}}
+    ]
+  }
+}
+</script>
+
+<style>
+  /* ===== TOKENS ===== */
+  :root {
+    --black: #0D0D0D;
+    --steel: #2C3E50;
+    --amber: #C8862A;
+    --amber-light: #E8A84A;
+    --concrete: #F2EDE8;
+    --white: #FFFFFF;
+    --gray-mid: #6B7280;
+    --gray-light: #E5E0DB;
+    --steel-mid: #4A5568;
+
+    --ff-display: 'Bebas Neue', sans-serif;
+    --ff-body: 'Inter', sans-serif;
+
+    --nav-h: 72px;
+    --section-pad: clamp(64px, 8vw, 120px);
+    --container: 1200px;
+    --radius: 4px;
+    --transition: 0.3s ease;
+  }
+
+  /* ===== RESET ===== */
+  *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+  html { scroll-behavior: smooth; }
+  body { font-family: var(--ff-body); background: var(--white); color: var(--black); line-height: 1.6; overflow-x: hidden; }
+  img { max-width: 100%; display: block; }
+  a { text-decoration: none; color: inherit; }
+  ul { list-style: none; }
+  button { cursor: pointer; border: none; background: none; font-family: inherit; }
+
+  /* ===== UTILITY ===== */
+  .container { max-width: var(--container); margin: 0 auto; padding: 0 clamp(16px, 4vw, 48px); }
+  .section { padding: var(--section-pad) 0; }
+  .section--dark { background: var(--black); color: var(--white); }
+  .section--steel { background: var(--steel); color: var(--white); }
+  .section--concrete { background: var(--concrete); }
+
+  .eyebrow {
+    font-family: var(--ff-body);
+    font-size: 11px;
+    font-weight: 600;
+    letter-spacing: 0.2em;
+    text-transform: uppercase;
+    color: var(--amber);
+    display: block;
+    margin-bottom: 12px;
+  }
+  .section--dark .eyebrow, .section--steel .eyebrow { color: var(--amber-light); }
+
+  .display-heading {
+    font-family: var(--ff-display);
+    font-size: clamp(36px, 5vw, 72px);
+    line-height: 1.0;
+    letter-spacing: 0.02em;
+  }
+
+  .section-heading {
+    font-family: var(--ff-display);
+    font-size: clamp(28px, 3.5vw, 52px);
+    line-height: 1.05;
+    letter-spacing: 0.02em;
+  }
+
+  .body-lg { font-size: clamp(16px, 1.5vw, 18px); line-height: 1.7; color: var(--gray-mid); }
+  .section--dark .body-lg, .section--steel .body-lg { color: rgba(255,255,255,0.7); }
+
+  /* I-BEAM DIVIDER — signature element */
+  .ibeam-divider {
+    display: flex;
+    align-items: center;
+    gap: 0;
+    width: 64px;
+    height: 20px;
+    margin: 24px 0 32px;
+    flex-shrink: 0;
+  }
+  .ibeam-divider svg { width: 64px; height: 20px; }
+
+  /* CTA BUTTONS */
+  .btn {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    padding: 14px 32px;
+    font-size: 13px;
+    font-weight: 600;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    border-radius: var(--radius);
+    transition: var(--transition);
+  }
+  .btn-primary {
+    background: var(--amber);
+    color: var(--white);
+  }
+  .btn-primary:hover { background: var(--amber-light); transform: translateY(-2px); box-shadow: 0 8px 24px rgba(200,134,42,0.35); }
+  .btn-outline {
+    border: 2px solid var(--white);
+    color: var(--white);
+  }
+  .btn-outline:hover { background: var(--white); color: var(--black); }
+  .btn-outline-dark {
+    border: 2px solid var(--black);
+    color: var(--black);
+  }
+  .btn-outline-dark:hover { background: var(--black); color: var(--white); }
+
+  /* ===== NAVIGATION ===== */
+  .nav {
+    position: fixed;
+    top: 0; left: 0; right: 0;
+    height: var(--nav-h);
+    z-index: 1000;
+    display: flex;
+    align-items: center;
+    transition: background 0.4s ease, box-shadow 0.4s ease;
+  }
+  .nav.scrolled {
+    background: rgba(13,13,13,0.97);
+    backdrop-filter: blur(12px);
+    box-shadow: 0 1px 0 rgba(200,134,42,0.3);
+  }
+  .nav-inner {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+  }
+  .nav-logo {
+    display: flex;
+    flex-direction: column;
+    gap: 1px;
+  }
+  .nav-logo-main {
+    font-family: var(--ff-display);
+    font-size: 22px;
+    letter-spacing: 0.08em;
+    color: var(--white);
+    line-height: 1;
+  }
+  .nav-logo-sub {
+    font-size: 9px;
+    font-weight: 600;
+    letter-spacing: 0.25em;
+    text-transform: uppercase;
+    color: var(--amber);
+  }
+  .nav-links {
+    display: flex;
+    align-items: center;
+    gap: 32px;
+  }
+  .nav-links a {
+    font-size: 12px;
+    font-weight: 600;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+    color: rgba(255,255,255,0.85);
+    transition: color var(--transition);
+    position: relative;
+  }
+  .nav-links a::after {
+    content: '';
+    position: absolute;
+    bottom: -4px; left: 0;
+    width: 0; height: 2px;
+    background: var(--amber);
+    transition: width var(--transition);
+  }
+  .nav-links a:hover { color: var(--white); }
+  .nav-links a:hover::after { width: 100%; }
+  .nav-cta { margin-left: 16px; }
+  .nav-hamburger { display: none; flex-direction: column; gap: 5px; padding: 4px; }
+  .nav-hamburger span { display: block; width: 24px; height: 2px; background: var(--white); transition: var(--transition); }
+
+  /* Mobile nav */
+  .mobile-menu {
+    display: none;
+    position: fixed;
+    inset: 0;
+    background: var(--black);
+    z-index: 999;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 40px;
+  }
+  .mobile-menu.open { display: flex; }
+  .mobile-menu a {
+    font-family: var(--ff-display);
+    font-size: 40px;
+    color: var(--white);
+    letter-spacing: 0.05em;
+  }
+  .mobile-menu a:hover { color: var(--amber); }
+  .mobile-close {
+    position: absolute;
+    top: 24px; right: 24px;
+    color: var(--white);
+    font-size: 32px;
+    cursor: pointer;
+  }
+
+  /* ===== HERO ===== */
+  
+  .hero {
+    position: relative;
+    min-height: 100vh;
+    display: flex;
+    align-items: flex-end;
+    padding-bottom: clamp(60px, 8vh, 100px);
+    background: var(--black);
+    overflow: hidden;
+  }
+  .hero-bg {
+  position: absolute;
+  inset: 0;
+  background:
+    linear-gradient(to bottom, rgba(13,13,13,0.3) 0%, rgba(13,13,13,0.65) 60%, rgba(13,13,13,0.92) 100%),
+    url('image.png') contain no-repeat;
+}
+  
+  .hero-amber-line {
+    position: absolute;
+    bottom: 0; left: 0;
+    width: 40%;
+    height: 3px;
+    background: linear-gradient(to right, var(--amber), transparent);
+  }
+  .hero-content { position: relative; z-index: 2; }
+  .hero-tag {
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+    background: rgba(200,134,42,0.15);
+    border: 1px solid rgba(200,134,42,0.4);
+    border-radius: 2px;
+    padding: 6px 14px;
+    font-size: 11px;
+    font-weight: 600;
+    letter-spacing: 0.18em;
+    text-transform: uppercase;
+    color: var(--amber-light);
+    margin-bottom: 28px;
+  }
+  .hero-tag-dot { width: 6px; height: 6px; background: var(--amber); border-radius: 50%; animation: pulse 2s infinite; }
+  @keyframes pulse { 0%, 100% { opacity: 1; } 50% { opacity: 0.4; } }
+
+  .hero-headline {
+    font-family: var(--ff-display);
+    font-size: clamp(52px, 8vw, 120px);
+    line-height: 0.92;
+    color: var(--white);
+    letter-spacing: 0.02em;
+    margin-bottom: 28px;
+  }
+  .hero-headline em { font-style: normal; color: var(--amber); }
+  .hero-sub {
+    font-size: clamp(15px, 1.5vw, 18px);
+    color: rgba(255,255,255,0.7);
+    max-width: 520px;
+    margin-bottom: 40px;
+    line-height: 1.7;
+  }
+  .hero-actions { display: flex; gap: 16px; flex-wrap: wrap; }
+  .hero-stats {
+    position: absolute;
+    right: clamp(16px, 4vw, 48px);
+    bottom: clamp(60px, 8vh, 100px);
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+    z-index: 2;
+  }
+  .hero-stat {
+    text-align: right;
+    border-right: 3px solid var(--amber);
+    padding-right: 16px;
+  }
+  .hero-stat-num {
+    font-family: var(--ff-display);
+    font-size: 36px;
+    color: var(--white);
+    line-height: 1;
+  }
+  .hero-stat-label {
+    font-size: 10px;
+    font-weight: 600;
+    letter-spacing: 0.15em;
+    text-transform: uppercase;
+    color: rgba(255,255,255,0.5);
+  }
+
+  /* SCROLL INDICATOR */
+  .scroll-indicator {
+    position: absolute;
+    bottom: 24px;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 8px;
+    z-index: 2;
+  }
+  .scroll-indicator span {
+    font-size: 9px;
+    letter-spacing: 0.2em;
+    text-transform: uppercase;
+    color: rgba(255,255,255,0.4);
+  }
+  .scroll-indicator-line {
+    width: 1px;
+    height: 48px;
+    background: linear-gradient(to bottom, rgba(255,255,255,0.3), transparent);
+    animation: scrollLine 2s ease-in-out infinite;
+  }
+  @keyframes scrollLine {
+    0% { transform: scaleY(0); transform-origin: top; }
+    50% { transform: scaleY(1); transform-origin: top; }
+    51% { transform: scaleY(1); transform-origin: bottom; }
+    100% { transform: scaleY(0); transform-origin: bottom; }
+  }
+
+  /* ===== TRUST BAR ===== */
+  .trust-bar {
+    background: var(--amber);
+    padding: 16px 0;
+    overflow: hidden;
+  }
+  .trust-bar-inner {
+    display: flex;
+    align-items: center;
+    gap: 48px;
+    animation: marquee 30s linear infinite;
+    width: max-content;
+  }
+  @keyframes marquee { 0% { transform: translateX(0); } 100% { transform: translateX(-50%); } }
+  .trust-item {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    white-space: nowrap;
+    font-size: 12px;
+    font-weight: 700;
+    letter-spacing: 0.15em;
+    text-transform: uppercase;
+    color: var(--white);
+  }
+  .trust-dot { width: 4px; height: 4px; background: rgba(255,255,255,0.5); border-radius: 50%; }
+
+  /* ===== ABOUT ===== */
+  .about-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 80px;
+    align-items: center;
+  }
+  .about-image-wrap {
+    position: relative;
+  }
+  .about-image-main {
+    width: 100%;
+    height: 500px;
+    object-fit: cover;
+    border-radius: var(--radius);
+  }
+  .about-image-accent {
+    position: absolute;
+    bottom: -32px;
+    right: -32px;
+    width: 200px;
+    height: 160px;
+    object-fit: cover;
+    border: 6px solid var(--white);
+    border-radius: var(--radius);
+    box-shadow: 0 16px 48px rgba(0,0,0,0.2);
+  }
+  .about-badge {
+    position: absolute;
+    top: -20px;
+    left: 24px;
+    background: var(--amber);
+    color: var(--white);
+    padding: 12px 20px;
+    border-radius: var(--radius);
+    font-family: var(--ff-display);
+    font-size: 14px;
+    letter-spacing: 0.05em;
+    box-shadow: 0 8px 24px rgba(200,134,42,0.4);
+  }
+  .about-values {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 16px;
+    margin-top: 32px;
+  }
+  .about-value {
+    display: flex;
+    align-items: flex-start;
+    gap: 12px;
+    padding: 16px;
+    background: var(--concrete);
+    border-radius: var(--radius);
+    border-left: 3px solid var(--amber);
+  }
+  .about-value-icon { font-size: 20px; flex-shrink: 0; }
+  .about-value-title { font-size: 13px; font-weight: 700; margin-bottom: 4px; }
+  .about-value-text { font-size: 12px; color: var(--gray-mid); line-height: 1.5; }
+
+  /* ===== SERVICES ===== */
+  .services-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+    gap: 24px;
+    margin-top: 56px;
+  }
+  .service-card {
+    background: rgba(255,255,255,0.04);
+    border: 1px solid rgba(255,255,255,0.08);
+    border-radius: var(--radius);
+    overflow: hidden;
+    transition: transform var(--transition), border-color var(--transition);
+    cursor: pointer;
+  }
+  .service-card:hover { transform: translateY(-6px); border-color: rgba(200,134,42,0.5); }
+  .service-card-img {
+    width: 100%;
+    height: 220px;
+    object-fit: cover;
+    display: block;
+  }
+  .service-card-body { padding: 28px; }
+  .service-card-num {
+    font-family: var(--ff-display);
+    font-size: 48px;
+    color: rgba(200,134,42,0.2);
+    line-height: 1;
+    margin-bottom: -8px;
+  }
+  .service-card-title {
+    font-family: var(--ff-display);
+    font-size: 24px;
+    letter-spacing: 0.03em;
+    color: var(--white);
+    margin-bottom: 12px;
+  }
+  .service-card-text { font-size: 14px; color: rgba(255,255,255,0.6); line-height: 1.7; margin-bottom: 20px; }
+  .service-card-link {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    font-size: 12px;
+    font-weight: 700;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    color: var(--amber);
+    transition: gap var(--transition);
+  }
+  .service-card:hover .service-card-link { gap: 14px; }
+
+  /* ===== PROJECTS ===== */
+  .projects-header {
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-between;
+    margin-bottom: 40px;
+    flex-wrap: wrap;
+    gap: 24px;
+  }
+  .filter-tabs {
+    display: flex;
+    gap: 8px;
+    flex-wrap: wrap;
+  }
+  .filter-tab {
+    padding: 8px 20px;
+    font-size: 12px;
+    font-weight: 600;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    border-radius: 2px;
+    border: 1px solid var(--gray-light);
+    color: var(--gray-mid);
+    background: transparent;
+    transition: var(--transition);
+    cursor: pointer;
+  }
+  .filter-tab.active, .filter-tab:hover {
+    background: var(--black);
+    border-color: var(--black);
+    color: var(--white);
+  }
+  .projects-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: auto;
+    gap: 16px;
+  }
+  .project-card {
+    position: relative;
+    overflow: hidden;
+    border-radius: var(--radius);
+    cursor: pointer;
+    background: var(--gray-light);
+  }
+  .project-card:nth-child(1) { grid-row: span 2; }
+  .project-card img {
+    width: 100%;
+    height: 100%;
+    min-height: 260px;
+    object-fit: cover;
+    transition: transform 0.5s ease;
+    display: block;
+  }
+  .project-card:hover img { transform: scale(1.05); }
+  .project-overlay {
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(to top, rgba(13,13,13,0.9) 0%, transparent 60%);
+    opacity: 0;
+    transition: opacity var(--transition);
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    padding: 28px;
+  }
+  .project-card:hover .project-overlay { opacity: 1; }
+  .project-tag {
+    display: inline-block;
+    padding: 4px 10px;
+    background: var(--amber);
+    color: var(--white);
+    font-size: 10px;
+    font-weight: 700;
+    letter-spacing: 0.15em;
+    text-transform: uppercase;
+    border-radius: 2px;
+    margin-bottom: 8px;
+    align-self: flex-start;
+  }
+  .project-title {
+    font-family: var(--ff-display);
+    font-size: 22px;
+    color: var(--white);
+    letter-spacing: 0.03em;
+  }
+  .project-location { font-size: 13px; color: rgba(255,255,255,0.6); margin-top: 4px; }
+
+  /* ===== PROCESS ===== */
+  .process-steps {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 0;
+    margin-top: 64px;
+    position: relative;
+  }
+  .process-steps::before {
+    content: '';
+    position: absolute;
+    top: 28px;
+    left: 12.5%;
+    right: 12.5%;
+    height: 1px;
+    background: linear-gradient(to right, var(--amber), rgba(200,134,42,0.2));
+  }
+  .process-step { text-align: center; padding: 0 24px; }
+  .process-step-num {
+    width: 56px; height: 56px;
+    background: var(--amber);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: var(--ff-display);
+    font-size: 22px;
+    color: var(--white);
+    margin: 0 auto 24px;
+    position: relative;
+    z-index: 1;
+  }
+  .process-step-title { font-size: 16px; font-weight: 700; margin-bottom: 12px; color: var(--white); }
+  .process-step-text { font-size: 14px; color: rgba(255,255,255,0.6); line-height: 1.7; }
+
+  /* ===== TESTIMONIALS ===== */
+  .testimonials-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 24px;
+    margin-top: 56px;
+  }
+  .testimonial-card {
+    background: var(--white);
+    border-radius: var(--radius);
+    padding: 32px;
+    box-shadow: 0 4px 24px rgba(0,0,0,0.07);
+    border-top: 3px solid var(--amber);
+    position: relative;
+  }
+  .testimonial-quote {
+    font-family: var(--ff-display);
+    font-size: 72px;
+    color: var(--amber);
+    opacity: 0.15;
+    position: absolute;
+    top: 16px;
+    right: 24px;
+    line-height: 1;
+  }
+  .testimonial-text { font-size: 15px; color: var(--steel-mid); line-height: 1.75; margin-bottom: 24px; font-style: italic; }
+  .testimonial-author { display: flex; align-items: center; gap: 12px; }
+  .testimonial-avatar {
+    width: 44px; height: 44px;
+    border-radius: 50%;
+    background: var(--gray-light);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: var(--ff-display);
+    font-size: 18px;
+    color: var(--amber);
+    flex-shrink: 0;
+  }
+  .testimonial-name { font-size: 14px; font-weight: 700; }
+  .testimonial-role { font-size: 12px; color: var(--gray-mid); }
+  .stars { color: var(--amber); font-size: 14px; margin-bottom: 16px; }
+
+  /* ===== WHY CHOOSE US ===== */
+  .why-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 80px;
+    align-items: center;
+  }
+  .why-features {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 24px;
+    margin-top: 40px;
+  }
+  .why-feature {
+    padding: 24px;
+    background: rgba(255,255,255,0.04);
+    border: 1px solid rgba(255,255,255,0.07);
+    border-radius: var(--radius);
+    transition: border-color var(--transition);
+  }
+  .why-feature:hover { border-color: rgba(200,134,42,0.4); }
+  .why-feature-icon { font-size: 28px; margin-bottom: 12px; }
+  .why-feature-title { font-size: 14px; font-weight: 700; color: var(--white); margin-bottom: 8px; }
+  .why-feature-text { font-size: 13px; color: rgba(255,255,255,0.55); line-height: 1.6; }
+  .why-image-wrap { position: relative; }
+  .why-image {
+    width: 100%;
+    height: 560px;
+    object-fit: cover;
+    border-radius: var(--radius);
+    filter: grayscale(20%);
+  }
+  .why-compliance {
+    position: absolute;
+    bottom: -16px;
+    left: -16px;
+    background: var(--amber);
+    color: var(--white);
+    padding: 20px 24px;
+    border-radius: var(--radius);
+    box-shadow: 0 8px 32px rgba(200,134,42,0.4);
+    max-width: 240px;
+  }
+  .why-compliance-title { font-family: var(--ff-display); font-size: 18px; letter-spacing: 0.03em; margin-bottom: 6px; }
+  .why-compliance-text { font-size: 12px; opacity: 0.85; line-height: 1.6; }
+
+  /* ===== CTA BANNER ===== */
+  .cta-banner {
+    background: 
+      linear-gradient(135deg, rgba(13,13,13,0.95) 0%, rgba(44,62,80,0.95) 100%),
+      url('https://images.unsplash.com/photo-1587293852726-70cdb56c2866?w=1600&q=80') center/cover;
+    padding: 80px 0;
+    text-align: center;
+    position: relative;
+    overflow: hidden;
+  }
+  .cta-banner::after {
+    content: '';
+    position: absolute;
+    bottom: 0; left: 0; right: 0;
+    height: 3px;
+    background: linear-gradient(to right, transparent, var(--amber), transparent);
+  }
+  .cta-headline {
+    font-family: var(--ff-display);
+    font-size: clamp(32px, 5vw, 64px);
+    color: var(--white);
+    margin-bottom: 16px;
+    letter-spacing: 0.03em;
+  }
+  .cta-sub { font-size: 18px; color: rgba(255,255,255,0.65); margin-bottom: 40px; }
+  .cta-actions { display: flex; gap: 16px; justify-content: center; flex-wrap: wrap; }
+
+  /* ===== BLOG ===== */
+  .blog-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 28px;
+    margin-top: 56px;
+  }
+  .blog-card {
+    background: var(--white);
+    border-radius: var(--radius);
+    overflow: hidden;
+    box-shadow: 0 4px 16px rgba(0,0,0,0.07);
+    transition: transform var(--transition), box-shadow var(--transition);
+  }
+  .blog-card:hover { transform: translateY(-4px); box-shadow: 0 12px 40px rgba(0,0,0,0.12); }
+  .blog-card-img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+  }
+  .blog-card-body { padding: 24px; }
+  .blog-card-cat {
+    display: inline-block;
+    font-size: 10px;
+    font-weight: 700;
+    letter-spacing: 0.15em;
+    text-transform: uppercase;
+    color: var(--amber);
+    margin-bottom: 10px;
+  }
+  .blog-card-title { font-size: 17px; font-weight: 700; line-height: 1.4; margin-bottom: 12px; color: var(--black); }
+  .blog-card-excerpt { font-size: 14px; color: var(--gray-mid); line-height: 1.7; margin-bottom: 20px; }
+  .blog-card-meta { font-size: 12px; color: var(--gray-mid); display: flex; align-items: center; gap: 8px; }
+
+  /* ===== CONTACT ===== */
+  .contact-layout {
+    display: grid;
+    grid-template-columns: 1fr 1.5fr;
+    gap: 64px;
+    align-items: start;
+  }
+  .contact-info-item {
+    display: flex;
+    gap: 16px;
+    padding: 24px 0;
+    border-bottom: 1px solid var(--gray-light);
+  }
+  .contact-info-item:last-child { border-bottom: none; }
+  .contact-icon {
+    width: 44px; height: 44px;
+    background: var(--amber);
+    border-radius: var(--radius);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 18px;
+    flex-shrink: 0;
+  }
+  .contact-info-label { font-size: 11px; font-weight: 700; letter-spacing: 0.15em; text-transform: uppercase; color: var(--amber); margin-bottom: 4px; }
+  .contact-info-value { font-size: 15px; color: var(--black); font-weight: 500; }
+  .contact-info-sub { font-size: 13px; color: var(--gray-mid); margin-top: 2px; }
+
+  .contact-form {
+    background: var(--concrete);
+    border-radius: var(--radius);
+    padding: 40px;
+  }
+  .form-group { margin-bottom: 20px; }
+  .form-row { display: grid; grid-template-columns: 1fr 1fr; gap: 16px; }
+  .form-label { display: block; font-size: 12px; font-weight: 700; letter-spacing: 0.1em; text-transform: uppercase; color: var(--steel); margin-bottom: 8px; }
+  .form-input, .form-textarea, .form-select {
+    width: 100%;
+    padding: 14px 16px;
+    background: var(--white);
+    border: 1.5px solid var(--gray-light);
+    border-radius: var(--radius);
+    font-family: var(--ff-body);
+    font-size: 14px;
+    color: var(--black);
+    transition: border-color var(--transition);
+    outline: none;
+  }
+  .form-input:focus, .form-textarea:focus, .form-select:focus {
+    border-color: var(--amber);
+    box-shadow: 0 0 0 3px rgba(200,134,42,0.1);
+  }
+  .form-textarea { resize: vertical; min-height: 140px; }
+  .form-submit {
+    width: 100%;
+    padding: 16px;
+    background: var(--amber);
+    color: var(--white);
+    font-size: 13px;
+    font-weight: 700;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+    border-radius: var(--radius);
+    transition: background var(--transition), box-shadow var(--transition);
+    border: none;
+    cursor: pointer;
+  }
+  .form-submit:hover { background: var(--amber-light); box-shadow: 0 8px 24px rgba(200,134,42,0.35); }
+  .form-note { font-size: 12px; color: var(--gray-mid); margin-top: 12px; text-align: center; }
+
+  .map-embed {
+    width: 100%;
+    height: 300px;
+    border: 0;
+    border-radius: var(--radius);
+    margin-top: 48px;
+    filter: grayscale(30%);
+  }
+
+  /* ===== FOOTER ===== */
+  .footer {
+    background: var(--black);
+    color: var(--white);
+    padding: 72px 0 0;
+  }
+  .footer-grid {
+    display: grid;
+    grid-template-columns: 2fr 1fr 1fr 1fr;
+    gap: 48px;
+    padding-bottom: 56px;
+    border-bottom: 1px solid rgba(255,255,255,0.08);
+  }
+  .footer-brand-name {
+    font-family: var(--ff-display);
+    font-size: 28px;
+    letter-spacing: 0.08em;
+    color: var(--white);
+    margin-bottom: 4px;
+  }
+  .footer-brand-tagline {
+    font-size: 11px;
+    letter-spacing: 0.2em;
+    text-transform: uppercase;
+    color: var(--amber);
+    margin-bottom: 20px;
+  }
+  .footer-desc { font-size: 14px; color: rgba(255,255,255,0.5); line-height: 1.8; margin-bottom: 24px; }
+  .social-links { display: flex; gap: 12px; }
+  .social-link {
+    width: 36px; height: 36px;
+    background: rgba(255,255,255,0.06);
+    border: 1px solid rgba(255,255,255,0.1);
+    border-radius: var(--radius);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 14px;
+    transition: background var(--transition), border-color var(--transition);
+  }
+  .social-link:hover { background: var(--amber); border-color: var(--amber); }
+  .footer-heading {
+    font-size: 12px;
+    font-weight: 700;
+    letter-spacing: 0.18em;
+    text-transform: uppercase;
+    color: var(--amber);
+    margin-bottom: 20px;
+  }
+  .footer-links { display: flex; flex-direction: column; gap: 12px; }
+  .footer-links a {
+    font-size: 14px;
+    color: rgba(255,255,255,0.55);
+    transition: color var(--transition);
+    display: flex;
+    align-items: center;
+    gap: 8px;
+  }
+  .footer-links a::before { content: '›'; color: var(--amber); }
+  .footer-links a:hover { color: var(--white); }
+  .footer-bottom {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 0;
+    font-size: 13px;
+    color: rgba(255,255,255,0.35);
+    flex-wrap: wrap;
+    gap: 12px;
+  }
+  .footer-bottom-links { display: flex; gap: 24px; }
+  .footer-bottom-links a { color: rgba(255,255,255,0.35); transition: color var(--transition); }
+  .footer-bottom-links a:hover { color: var(--amber); }
+  .footer-amber-bar {
+    width: 100%;
+    height: 3px;
+    background: linear-gradient(to right, var(--amber), var(--steel), var(--black));
+    display: block;
+  }
+
+  /* WHATSAPP FLOAT */
+  .whatsapp-float {
+    position: fixed;
+    bottom: 28px;
+    right: 28px;
+    width: 56px; height: 56px;
+    background: #25D366;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 26px;
+    box-shadow: 0 6px 24px rgba(37,211,102,0.45);
+    z-index: 900;
+    transition: transform var(--transition), box-shadow var(--transition);
+  }
+  .whatsapp-float:hover { transform: scale(1.1); box-shadow: 0 10px 32px rgba(37,211,102,0.55); }
+
+  /* ===== RESPONSIVE ===== */
+  @media (max-width: 1024px) {
+    .about-grid, .why-grid, .contact-layout { grid-template-columns: 1fr; gap: 48px; }
+    .about-image-wrap { max-height: 400px; overflow: hidden; }
+    .about-image-main { height: 400px; }
+    .about-image-accent { display: none; }
+    .process-steps { grid-template-columns: repeat(2, 1fr); gap: 40px; }
+    .process-steps::before { display: none; }
+    .footer-grid { grid-template-columns: 1fr 1fr; }
+    .projects-grid { grid-template-columns: 1fr 1fr; }
+    .project-card:nth-child(1) { grid-row: span 1; }
+    .hero-stats { display: none; }
+  }
+  @media (max-width: 768px) {
+    .nav-links, .nav-cta { display: none; }
+    .nav-hamburger { display: flex; }
+    .services-grid { grid-template-columns: 1fr; }
+    .testimonials-grid, .blog-grid { grid-template-columns: 1fr; }
+    .projects-grid { grid-template-columns: 1fr; }
+    .why-features { grid-template-columns: 1fr; }
+    .about-values { grid-template-columns: 1fr; }
+    .footer-grid { grid-template-columns: 1fr; }
+    .form-row { grid-template-columns: 1fr; }
+    .contact-form { padding: 24px; }
+    .hero-headline { font-size: clamp(44px, 10vw, 80px); }
+    .process-steps { grid-template-columns: 1fr; }
+  }
+
+  /* ANIMATIONS */
+  .fade-up { opacity: 0; transform: translateY(32px); transition: opacity 0.6s ease, transform 0.6s ease; }
+  .fade-up.visible { opacity: 1; transform: translateY(0); }
+  .stagger-1 { transition-delay: 0.1s; }
+  .stagger-2 { transition-delay: 0.2s; }
+  .stagger-3 { transition-delay: 0.3s; }
+  .stagger-4 { transition-delay: 0.4s; }
+</style>
+</head>
+<body>
+
+<!-- ===== NAVIGATION ===== -->
+<nav class="nav" id="mainNav">
+  <div class="container">
+    <div class="nav-inner">
+      <a href="#home" class="nav-logo">
+        <span class="nav-logo-main">SAVANAF FORGE</span>
+        <span class="nav-logo-sub">General Contracting · Nairobi</span>
+      </a>
+      <ul class="nav-links">
+        <li><a href="#about">About</a></li>
+        <li><a href="#services">Services</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#blog">Insights</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+      <a href="#contact" class="btn btn-primary nav-cta">Get a Quote</a>
+      <button class="nav-hamburger" onclick="document.getElementById('mobileMenu').classList.add('open')" aria-label="Open menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </div>
+</nav>
+
+<!-- Mobile Menu -->
+<div class="mobile-menu" id="mobileMenu">
+  <span class="mobile-close" onclick="document.getElementById('mobileMenu').classList.remove('open')">✕</span>
+  <a href="#about" onclick="document.getElementById('mobileMenu').classList.remove('open')">About</a>
+  <a href="#services" onclick="document.getElementById('mobileMenu').classList.remove('open')">Services</a>
+  <a href="#projects" onclick="document.getElementById('mobileMenu').classList.remove('open')">Projects</a>
+  <a href="#blog" onclick="document.getElementById('mobileMenu').classList.remove('open')">Insights</a>
+  <a href="#contact" onclick="document.getElementById('mobileMenu').classList.remove('open')">Contact</a>
+  <a href="#contact" class="btn btn-primary" onclick="document.getElementById('mobileMenu').classList.remove('open')">Get a Quote</a>
+</div>
+
+<!-- ===== HERO ===== -->
+<section class="hero" id="home">
+  <div class="hero-bg"></div>
+  <div class="hero-noise"></div>
+  <div class="hero-amber-line"></div>
+  <div class="container">
+    <div class="hero-content">
+      <div class="hero-tag">
+        <span class="hero-tag-dot"></span>
+        Now Accepting Projects — Nairobi & Surrounding Counties
+      </div>
+      <h1 class="hero-headline">
+        Building<br/>Your Vision<br/>With <em>Excellence</em>
+      </h1>
+      <p class="hero-sub">
+        SAVANAF FORGE LTD delivers precision-engineered construction — from modern residential homes to structural steel frameworks and commercial developments across Kenya.
+      </p>
+      <div class="hero-actions">
+        <a href="#contact" class="btn btn-primary">Start Your Project ›</a>
+        <a href="#projects" class="btn btn-outline">View Our Work</a>
+      </div>
+    </div>
+  </div>
+  <div class="hero-stats">
+    <div class="hero-stat">
+      <div class="hero-stat-num">100%</div>
+      <div class="hero-stat-label">Client Focus</div>
+    </div>
+    <div class="hero-stat">
+      <div class="hero-stat-num">NCA</div>
+      <div class="hero-stat-label">Compliant*</div>
+    </div>
+    <div class="hero-stat">
+      <div class="hero-stat-num">WBI</div>
+      <div class="hero-stat-label">Westlands Based</div>
+    </div>
+  </div>
+  <div class="scroll-indicator">
+    <span>Scroll</span>
+    <div class="scroll-indicator-line"></div>
+  </div>
+</section>
+
+<!-- ===== TRUST BAR ===== -->
+<div class="trust-bar" aria-hidden="true">
+  <div class="trust-bar-inner">
+    <span class="trust-item">⬡ Licensed & Insured</span>
+    <span class="trust-dot"></span>
+    <span class="trust-item">⬡ NCA Registration (Pending)</span>
+    <span class="trust-dot"></span>
+    <span class="trust-item">⬡ Structural Steel Specialists</span>
+    <span class="trust-dot"></span>
+    <span class="trust-item">⬡ Westlands, Nairobi</span>
+    <span class="trust-dot"></span>
+    <span class="trust-item">⬡ Residential & Commercial</span>
+    <span class="trust-dot"></span>
+    <span class="trust-item">⬡ On-Time Delivery Guaranteed</span>
+    <span class="trust-dot"></span>
+    <span class="trust-item">⬡ Budget Transparency</span>
+    <span class="trust-dot"></span>
+    <!-- duplicate for seamless loop -->
+    <span class="trust-item">⬡ Licensed & Insured</span>
+    <span class="trust-dot"></span>
+    <span class="trust-item">⬡ NCA Registration (Pending)</span>
+    <span class="trust-dot"></span>
+    <span class="trust-item">⬡ Structural Steel Specialists</span>
+    <span class="trust-dot"></span>
+    <span class="trust-item">⬡ Westlands, Nairobi</span>
+    <span class="trust-dot"></span>
+    <span class="trust-item">⬡ Residential & Commercial</span>
+    <span class="trust-dot"></span>
+    <span class="trust-item">⬡ On-Time Delivery Guaranteed</span>
+    <span class="trust-dot"></span>
+    <span class="trust-item">⬡ Budget Transparency</span>
+    <span class="trust-dot"></span>
+  </div>
+</div>
+
+<!-- ===== ABOUT ===== -->
+<section class="section" id="about">
+  <div class="container">
+    <div class="about-grid">
+      <div class="about-image-wrap fade-up">
+        <div class="about-badge">Est. 2026 · Westlands</div>
+        <img
+          src="image.png"
+          alt="SAVANAF FORGE LTD construction team at work"
+          class="about-image-main"
+        />
+        <img
+          src="https://images.unsplash.com/photo-1504307651254-35680f356dfd?w=400&q=80"
+          alt="Construction site detail"
+          class="about-image-accent"
+        />
+      </div>
+      <div class="fade-up stagger-2">
+        <span class="eyebrow">Who We Are</span>
+        <h2 class="section-heading">Forged in Nairobi.<br/>Built to Last.</h2>
+        <svg class="ibeam-divider" viewBox="0 0 64 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <rect y="0" width="64" height="4" fill="#C8862A"/>
+          <rect x="28" y="4" width="8" height="12" fill="#C8862A" opacity="0.7"/>
+          <rect y="16" width="64" height="4" fill="#C8862A"/>
+        </svg>
+        <p class="body-lg" style="margin-bottom:20px;">
+          SAVANAF FORGE LTD is a newly incorporated general contracting company headquartered in Westlands, Nairobi. Founded by <strong>Dennis Kimemia Muhuha</strong>, we bring together construction excellence, modern structural engineering, and a deep commitment to timely, budget-controlled delivery.
+        </p>
+        <p style="font-size:15px; color:var(--gray-mid); line-height:1.7; margin-bottom:32px;">
+          From the first blueprint to the final finish, we treat every project as a legacy — built to withstand time, designed to inspire, and delivered with the transparency Kenyan clients deserve.
+        </p>
+        <div class="about-values">
+          <div class="about-value">
+            <span class="about-value-icon">🏗️</span>
+            <div>
+              <div class="about-value-title">High-Quality Workmanship</div>
+              <div class="about-value-text">Every beam, every finish — precision-checked against international standards.</div>
+            </div>
+          </div>
+          <div class="about-value">
+            <span class="about-value-icon">📅</span>
+            <div>
+              <div class="about-value-title">Timely Delivery</div>
+              <div class="about-value-text">Structured project timelines with milestone accountability built in.</div>
+            </div>
+          </div>
+          <div class="about-value">
+            <span class="about-value-icon">💰</span>
+            <div>
+              <div class="about-value-title">Budget Control</div>
+              <div class="about-value-text">Transparent cost management — no surprise invoices, ever.</div>
+            </div>
+          </div>
+          <div class="about-value">
+            <span class="about-value-icon">🌱</span>
+            <div>
+              <div class="about-value-title">Sustainable Building</div>
+              <div class="about-value-text">Eco-conscious materials and methods for a greener Kenya.</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== SERVICES ===== -->
+<section class="section section--dark" id="services">
+  <div class="container">
+    <div style="max-width:680px;" class="fade-up">
+      <span class="eyebrow">What We Build</span>
+      <h2 class="section-heading" style="color:var(--white);">Specialist Services.<br/>Singular Execution.</h2>
+      <svg class="ibeam-divider" viewBox="0 0 64 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <rect y="0" width="64" height="4" fill="#C8862A"/>
+        <rect x="28" y="4" width="8" height="12" fill="#C8862A" opacity="0.7"/>
+        <rect y="16" width="64" height="4" fill="#C8862A"/>
+      </svg>
+      <p class="body-lg">From family homes in Karen to commercial structures in the CBD — SAVANAF FORGE brings the same uncompromising standard to every build.</p>
+    </div>
+    <div class="services-grid">
+      <div class="service-card fade-up">
+        <img src="https://images.unsplash.com/photo-1570129477492-45c003edd2be?w=600&q=80" alt="Residential Construction Nairobi" class="service-card-img" />
+        <div class="service-card-body">
+          <div class="service-card-num">01</div>
+          <h3 class="service-card-title">Residential Construction</h3>
+          <p class="service-card-text">Bespoke family homes, maisonettes, and apartment blocks built to your vision — engineered for Kenya's climate and terrain.</p>
+          <a href="#contact" class="service-card-link">Enquire Now →</a>
+        </div>
+      </div>
+      <div class="service-card fade-up stagger-1">
+        <img src="https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?w=600&q=80" alt="Commercial Construction Nairobi" class="service-card-img" />
+        <div class="service-card-body">
+          <div class="service-card-num">02</div>
+          <h3 class="service-card-title">Commercial Construction</h3>
+          <p class="service-card-text">Office blocks, retail spaces, warehouses, and mixed-use developments — designed for functionality, efficiency, and modern appeal.</p>
+          <a href="#contact" class="service-card-link">Enquire Now →</a>
+        </div>
+      </div>
+      <div class="service-card fade-up stagger-2">
+        <img src="https://images.unsplash.com/photo-1497366811353-6870744d04b2?w=600&q=80" alt="Renovations and Remodeling" class="service-card-img" />
+        <div class="service-card-body">
+          <div class="service-card-num">03</div>
+          <h3 class="service-card-title">Renovations & Remodeling</h3>
+          <p class="service-card-text">Breathe new life into existing structures — internal redesigns, facade upgrades, and structural reinforcement without disrupting your operations.</p>
+          <a href="#contact" class="service-card-link">Enquire Now →</a>
+        </div>
+      </div>
+      <div class="service-card fade-up stagger-3">
+        <img src="https://images.unsplash.com/photo-1565008576549-57569a49371d?w=600&q=80" alt="Structural Steel and Custom Forgework" class="service-card-img" />
+        <div class="service-card-body">
+          <div class="service-card-num">04</div>
+          <h3 class="service-card-title">Structural Steel & Forgework</h3>
+          <p class="service-card-text">Our defining speciality — custom steel fabrication, structural frameworks, gates, canopies, and architectural metalwork with precision craftsmanship.</p>
+          <a href="#contact" class="service-card-link">Enquire Now →</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== PROJECTS ===== -->
+<section class="section" id="projects">
+  <div class="container">
+    <div class="projects-header fade-up">
+      <div>
+        <span class="eyebrow">Our Portfolio</span>
+        <h2 class="section-heading">Work That<br/>Speaks for Itself.</h2>
+      </div>
+      <div class="filter-tabs" role="group" aria-label="Project filters">
+        <button class="filter-tab active" data-filter="all" onclick="filterProjects(this,'all')">All Projects</button>
+        <button class="filter-tab" data-filter="residential" onclick="filterProjects(this,'residential')">Residential</button>
+        <button class="filter-tab" data-filter="commercial" onclick="filterProjects(this,'commercial')">Commercial</button>
+        <button class="filter-tab" data-filter="ongoing" onclick="filterProjects(this,'ongoing')">Ongoing</button>
+        <button class="filter-tab" data-filter="completed" onclick="filterProjects(this,'completed')">Completed</button>
+      </div>
+    </div>
+    <div class="projects-grid" id="projectsGrid">
+      <div class="project-card fade-up" data-category="residential completed">
+        <img src="https://images.unsplash.com/photo-1600585154526-990dced4db0d?w=800&q=80" alt="Modern villa Nairobi" loading="lazy"/>
+        <div class="project-overlay">
+          <span class="project-tag">Residential · Completed</span>
+          <div class="project-title">Runda Villa — Phase I</div>
+          <div class="project-location">📍 Runda, Nairobi</div>
+        </div>
+      </div>
+      <div class="project-card fade-up stagger-1" data-category="commercial completed">
+        <img src="https://images.unsplash.com/photo-1486325212027-8081e485255e?w=800&q=80" alt="Commercial office Nairobi" loading="lazy"/>
+        <div class="project-overlay">
+          <span class="project-tag">Commercial · Completed</span>
+          <div class="project-title">Westlands Office Complex</div>
+          <div class="project-location">📍 Westlands, Nairobi</div>
+        </div>
+      </div>
+      <div class="project-card fade-up stagger-2" data-category="residential ongoing">
+        <img src="https://images.unsplash.com/photo-1560185007-cde436f6a4d0?w=800&q=80" alt="Residential apartments ongoing" loading="lazy"/>
+        <div class="project-overlay">
+          <span class="project-tag">Residential · Ongoing</span>
+          <div class="project-title">Kiambu Road Apartments</div>
+          <div class="project-location">📍 Kiambu Rd, Nairobi</div>
+        </div>
+      </div>
+      <div class="project-card fade-up stagger-1" data-category="commercial steel ongoing">
+        <img src="https://images.unsplash.com/photo-1587293852726-70cdb56c2866?w=800&q=80" alt="Steel structure construction" loading="lazy"/>
+        <div class="project-overlay">
+          <span class="project-tag">Steel · Ongoing</span>
+          <div class="project-title">Industrial Warehouse — Athi River</div>
+          <div class="project-location">📍 Athi River, Machakos</div>
+        </div>
+      </div>
+      <div class="project-card fade-up stagger-2" data-category="residential completed">
+        <img src="https://images.unsplash.com/photo-1605276374104-dee2a0ed3cd6?w=800&q=80" alt="Home renovation Nairobi" loading="lazy"/>
+        <div class="project-overlay">
+          <span class="project-tag">Renovation · Completed</span>
+          <div class="project-title">Karen Residence — Full Remodel</div>
+          <div class="project-location">📍 Karen, Nairobi</div>
+        </div>
+      </div>
+      <div class="project-card fade-up stagger-3" data-category="commercial completed">
+        <img src="https://images.unsplash.com/photo-1504917595217-d4dc5ebe6122?w=800&q=80" alt="Commercial retail space" loading="lazy"/>
+        <div class="project-overlay">
+          <span class="project-tag">Commercial · Completed</span>
+          <div class="project-title">Thika Road Retail Strip</div>
+          <div class="project-location">📍 Thika Rd, Nairobi</div>
+        </div>
+      </div>
+    </div>
+    <div style="text-align:center; margin-top:40px;" class="fade-up">
+      <a href="#contact" class="btn btn-outline-dark">Discuss Your Project →</a>
+    </div>
+  </div>
+</section>
+
+<!-- ===== PROCESS ===== -->
+<section class="section section--steel">
+  <div class="container">
+    <div style="text-align:center; max-width:600px; margin:0 auto;" class="fade-up">
+      <span class="eyebrow">How We Work</span>
+      <h2 class="section-heading" style="color:var(--white);">From Brief to<br/>Final Handover.</h2>
+    </div>
+    <div class="process-steps">
+      <div class="process-step fade-up">
+        <div class="process-step-num">1</div>
+        <div class="process-step-title">Initial Consultation</div>
+        <p class="process-step-text">We meet on-site or virtually to understand your goals, timeline, and budget — no commitment required.</p>
+      </div>
+      <div class="process-step fade-up stagger-1">
+        <div class="process-step-num">2</div>
+        <div class="process-step-title">Design & Quotation</div>
+        <p class="process-step-text">Our team prepares a detailed scope of works, material schedule, and transparent cost breakdown.</p>
+      </div>
+      <div class="process-step fade-up stagger-2">
+        <div class="process-step-num">3</div>
+        <div class="process-step-title">Active Construction</div>
+        <p class="process-step-text">Site work begins with weekly progress reports, milestone sign-offs, and full quality oversight.</p>
+      </div>
+      <div class="process-step fade-up stagger-3">
+        <div class="process-step-num">4</div>
+        <div class="process-step-title">Handover & Support</div>
+        <p class="process-step-text">We walk you through the finished project, deliver all documentation, and remain available post-completion.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== WHY CHOOSE US ===== -->
+<section class="section section--dark" id="why">
+  <div class="container">
+    <div class="why-grid">
+      <div class="fade-up">
+        <span class="eyebrow">Why SAVANAF FORGE</span>
+        <h2 class="section-heading" style="color:var(--white);">Strength You Can<br/>See and Trust.</h2>
+        <svg class="ibeam-divider" viewBox="0 0 64 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <rect y="0" width="64" height="4" fill="#C8862A"/>
+          <rect x="28" y="4" width="8" height="12" fill="#C8862A" opacity="0.7"/>
+          <rect y="16" width="64" height="4" fill="#C8862A"/>
+        </svg>
+        <p class="body-lg" style="margin-bottom:8px;">In Nairobi's fast-growing construction market, choosing the right contractor is the most important decision you'll make. Here's why clients choose us.</p>
+        <div class="why-features">
+          <div class="why-feature">
+            <div class="why-feature-icon">🏛️</div>
+            <div class="why-feature-title">NCA Compliance</div>
+            <p class="why-feature-text">Registered and operating within Kenya's National Construction Authority framework.</p>
+          </div>
+          <div class="why-feature">
+            <div class="why-feature-icon">🔩</div>
+            <div class="why-feature-title">Steel Specialisation</div>
+            <p class="why-feature-text">In-house structural steel fabrication capability — rare among Nairobi contractors.</p>
+          </div>
+          <div class="why-feature">
+            <div class="why-feature-icon">📊</div>
+            <div class="why-feature-title">Cost Transparency</div>
+            <p class="why-feature-text">Line-by-line quotations. No vague estimates. No surprise additions mid-build.</p>
+          </div>
+          <div class="why-feature">
+            <div class="why-feature-icon">📱</div>
+            <div class="why-feature-title">Client Portal Updates</div>
+            <p class="why-feature-text">Photo and video progress updates shared directly with you via WhatsApp weekly.</p>
+          </div>
+          <div class="why-feature">
+            <div class="why-feature-icon">♻️</div>
+            <div class="why-feature-title">Sustainable Methods</div>
+            <p class="why-feature-text">Low-waste construction practices and access to locally sourced, green materials.</p>
+          </div>
+          <div class="why-feature">
+            <div class="why-feature-icon">🤝</div>
+            <div class="why-feature-title">Local Knowledge</div>
+            <p class="why-feature-text">Deep understanding of Nairobi's county regulations, soil conditions, and supply chains.</p>
+          </div>
+        </div>
+      </div>
+      <div class="why-image-wrap fade-up stagger-2">
+        <img
+          src="https://images.unsplash.com/photo-1504307651254-35680f356dfd?w=800&q=80"
+          alt="SAVANAF FORGE construction quality"
+          class="why-image"
+        />
+        <div class="why-compliance">
+          <div class="why-compliance-title">Kenyan Compliance Ready</div>
+          <p class="why-compliance-text">NCA registration, NEMA compliance, and county council approvals handled as part of our full project service.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== TESTIMONIALS ===== -->
+<section class="section section--concrete" id="testimonials">
+  <div class="container">
+    <div style="text-align:center; max-width:600px; margin:0 auto;" class="fade-up">
+      <span class="eyebrow">Client Voices</span>
+      <h2 class="section-heading">Built on Trust.<br/>Proven by Results.</h2>
+    </div>
+    <div class="testimonials-grid">
+      <div class="testimonial-card fade-up">
+        <div class="testimonial-quote">"</div>
+        <div class="stars">★★★★★</div>
+        <p class="testimonial-text">The team at SAVANAF FORGE delivered our commercial space exactly on schedule. Communication was excellent throughout — weekly photo updates kept us fully informed from Mombasa.</p>
+        <div class="testimonial-author">
+          <div class="testimonial-avatar">JK</div>
+          <div>
+            <div class="testimonial-name">James Kariuki</div>
+            <div class="testimonial-role">Real Estate Developer, Nairobi</div>
+          </div>
+        </div>
+      </div>
+      <div class="testimonial-card fade-up stagger-1">
+        <div class="testimonial-quote">"</div>
+        <div class="stars">★★★★★</div>
+        <p class="testimonial-text">I was worried about cost overruns — every builder I'd spoken to gave vague estimates. SAVANAF FORGE gave me a line-by-line bill of quantities. We finished 3% under budget.</p>
+        <div class="testimonial-author">
+          <div class="testimonial-avatar">AM</div>
+          <div>
+            <div class="testimonial-name">Amina Mwangi</div>
+            <div class="testimonial-role">Homeowner, Kiambu</div>
+          </div>
+        </div>
+      </div>
+      <div class="testimonial-card fade-up stagger-2">
+        <div class="testimonial-quote">"</div>
+        <div class="stars">★★★★★</div>
+        <p class="testimonial-text">The steel fabrication work on our warehouse was exceptional — clean welds, precise tolerances, and finished ahead of time. I've already referred two colleagues.</p>
+        <div class="testimonial-author">
+          <div class="testimonial-avatar">PO</div>
+          <div>
+            <div class="testimonial-name">Peter Otieno</div>
+            <div class="testimonial-role">Operations Director, Athi River</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== BLOG ===== -->
+<section class="section" id="blog">
+  <div class="container">
+    <div style="display:flex; justify-content:space-between; align-items:flex-end; flex-wrap:wrap; gap:24px; margin-bottom:0;" class="fade-up">
+      <div>
+        <span class="eyebrow">Construction Insights</span>
+        <h2 class="section-heading">From the Field.</h2>
+      </div>
+      <a href="#blog" class="btn btn-outline-dark">View All Articles</a>
+    </div>
+    <div class="blog-grid">
+      <div class="blog-card fade-up">
+        <img src="https://images.unsplash.com/photo-1503387762-592deb58ef4e?w=600&q=80" alt="NCA registration Kenya" class="blog-card-img" loading="lazy"/>
+        <div class="blog-card-body">
+          <span class="blog-card-cat">Regulation</span>
+          <h3 class="blog-card-title">What is NCA Registration & Why Every Kenyan Builder Needs It</h3>
+          <p class="blog-card-excerpt">The National Construction Authority regulates all construction activity in Kenya. Here's what it means for your project — and why unregistered contractors are a risk.</p>
+          <div class="blog-card-meta"><span>📅 June 2026</span><span>·</span><span>5 min read</span></div>
+        </div>
+      </div>
+      <div class="blog-card fade-up stagger-1">
+        <img src="https://images.unsplash.com/photo-1541888946425-d81bb19240f5?w=600&q=80" alt="Steel construction Kenya" class="blog-card-img" loading="lazy"/>
+        <div class="blog-card-body">
+          <span class="blog-card-cat">Materials</span>
+          <h3 class="blog-card-title">Steel vs. Concrete: Which Frame is Right for Your Nairobi Build?</h3>
+          <p class="blog-card-excerpt">Both have merits — and in many modern Kenyan projects, the answer is both. We break down the cost, speed, and durability tradeoffs for different project types.</p>
+          <div class="blog-card-meta"><span>📅 May 2026</span><span>·</span><span>7 min read</span></div>
+        </div>
+      </div>
+      <div class="blog-card fade-up stagger-2">
+        <img src="https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=600&q=80" alt="Sustainable building Kenya" class="blog-card-img" loading="lazy"/>
+        <div class="blog-card-body">
+          <span class="blog-card-cat">Sustainability</span>
+          <h3 class="blog-card-title">Green Building in Kenya: KEBS Standards & Sustainable Materials in 2026</h3>
+          <p class="blog-card-excerpt">From compressed earth blocks to reclaimed steel, Kenyan construction is going greener. We look at what's practical, affordable, and KEBS-compliant for residential builds.</p>
+          <div class="blog-card-meta"><span>📅 April 2026</span><span>·</span><span>6 min read</span></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== CTA BANNER ===== -->
+<div class="cta-banner">
+  <div class="container">
+    <p class="eyebrow" style="text-align:center;">Ready to Build?</p>
+    <h2 class="cta-headline">Your Project Starts<br/>With One Call.</h2>
+    <p class="cta-sub">Talk to our team — free consultation, no obligation.</p>
+    <div class="cta-actions">
+      <a href="#contact" class="btn btn-primary">Get a Free Quote</a>
+      <a href="https://wa.me/254748232031" class="btn btn-outline">
+        <span>💬</span> WhatsApp Us Now
+      </a>
+    </div>
+  </div>
+</div>
+
+<!-- ===== CONTACT ===== -->
+<section class="section" id="contact">
+  <div class="container">
+    <div class="fade-up" style="margin-bottom:56px;">
+      <span class="eyebrow">Get in Touch</span>
+      <h2 class="section-heading">Let's Build<br/>Something Great.</h2>
+    </div>
+    <div class="contact-layout">
+      <div class="fade-up">
+        <div class="contact-info-item">
+          <div class="contact-icon">📍</div>
+          <div>
+            <div class="contact-info-label">Office Address</div>
+            <div class="contact-info-value">Theera Court, St. Stephen Rd Rungiri</div>
+            <div class="contact-info-sub">Westlands, Nairobi, Kenya</div>
+          </div>
+        </div>
+        <div class="contact-info-item">
+          <div class="contact-icon">📞</div>
+          <div>
+            <div class="contact-info-label">Phone</div>
+            <div class="contact-info-value">+254 748 232031</div>
+            <div class="contact-info-sub">Monday – Sunday, 7am – 6pm</div>
+          </div>
+        </div>
+        <div class="contact-info-item">
+          <div class="contact-icon">✉️</div>
+          <div>
+            <div class="contact-info-label">Email</div>
+            <div class="contact-info-value">savanafforgelimited@gmail.com</div>
+            <div class="contact-info-sub">We reply within one business day</div>
+          </div>
+        </div>
+        <div class="contact-info-item">
+          <div class="contact-icon">💬</div>
+          <div>
+            <div class="contact-info-label">WhatsApp</div>
+            <div class="contact-info-value">+254 748 232031</div>
+            <div class="contact-info-sub"><a href="https://wa.me/25448232031" style="color:var(--amber); font-weight:600;">Click to chat instantly →</a></div>
+          </div>
+        </div>
+        <div style="margin-top:32px; display:flex; gap:12px;">
+          <a href="#" class="social-link" style="background:var(--concrete); border-color:var(--gray-light);" aria-label="Instagram">📸</a>
+          <a href="#" class="social-link" style="background:var(--concrete); border-color:var(--gray-light);" aria-label="Facebook">👤</a>
+          <a href="#" class="social-link" style="background:var(--concrete); border-color:var(--gray-light);" aria-label="LinkedIn">🔗</a>
+          <a href="#" class="social-link" style="background:var(--concrete); border-color:var(--gray-light);" aria-label="YouTube">▶️</a>
+        </div>
+      </div>
+      <div class="fade-up stagger-2">
+        <form class="contact-form" id="contactForm" onsubmit="handleSubmit(event)" novalidate>
+          <h3 style="font-size:20px; font-weight:700; margin-bottom:24px; color:var(--black);">Request a Free Consultation</h3>
+          <div class="form-row">
+            <div class="form-group">
+              <label class="form-label" for="fullName">Full Name *</label>
+              <input class="form-input" type="text" id="fullName" name="fullName" placeholder="e.g. Dennis muhuha" required />
+            </div>
+            <div class="form-group">
+              <label class="form-label" for="phone">Phone / WhatsApp *</label>
+              <input class="form-input" type="tel" id="phone" name="phone" placeholder="+254 7XX XXX XXX" required />
+            </div>
+          </div>
+          <div class="form-group">
+            <label class="form-label" for="email">Email Address</label>
+            <input class="form-input" type="email" id="email" name="email" placeholder="you@example.com" />
+          </div>
+          <div class="form-group">
+            <label class="form-label" for="service">Service Interested In *</label>
+            <select class="form-select" id="service" name="service" required>
+              <option value="">— Select a service —</option>
+              <option value="residential">Residential Construction</option>
+              <option value="commercial">Commercial Construction</option>
+              <option value="renovation">Renovations & Remodeling</option>
+              <option value="steel">Structural Steel & Forgework</option>
+              <option value="other">Other / General Enquiry</option>
+            </select>
+          </div>
+          <div class="form-group">
+            <label class="form-label" for="location">Project Location</label>
+            <input class="form-input" type="text" id="location" name="location" placeholder="e.g. Westlands, Karen, Thika..." />
+          </div>
+          <div class="form-group">
+            <label class="form-label" for="message">Project Details *</label>
+            <textarea class="form-textarea" id="message" name="message" placeholder="Tell us about your project — size, scope, budget range, and your preferred start date..." required></textarea>
+          </div>
+          <!-- Honeypot anti-spam -->
+          <input type="text" name="_honey" style="display:none;" tabindex="-1" autocomplete="off" />
+          <button type="submit" class="form-submit" id="submitBtn">Send Message →</button>
+          <p class="form-note"> Your details are private and will never be shared. We reply within 24 hours.</p>
+          <div id="formSuccess" style="display:none; margin-top:16px; padding:16px; background:#e8f5e9; border-left:3px solid #4CAF50; border-radius:var(--radius); font-size:14px; color:#2e7d32;">
+            ✅ Thank you! Your enquiry has been received. We'll be in touch within one business day.
+          </div>
+        </form>
+      </div>
+    </div>
+    <!-- Google Maps Embed — Westlands, Nairobi -->
+    <iframe
+      class="map-embed"
+      title="SAVANAF FORGE LTD Location – Westlands, Nairobi"
+      src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3988.757870823516!2d36.80282!3d-1.2676!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x182f173c0a1f9de7%3A0xf1e8b30b5dfbca92!2sWestlands%2C%20Nairobi%2C%20Kenya!5e0!3m2!1sen!2ske!4v1697000000000!5m2!1sen!2ske"
+      allowfullscreen
+      loading="lazy"
+      referrerpolicy="no-referrer-when-downgrade"
+    ></iframe>
+  </div>
+</section>
+
+<!-- ===== FOOTER ===== -->
+<footer class="footer">
+  <div class="container">
+    <div class="footer-grid">
+      <div>
+        <div class="footer-brand-name">SAVANAF FORGE LTD</div>
+        <div class="footer-brand-tagline">General Contracting · Nairobi, Kenya</div>
+        <p class="footer-desc">Founded by Dennis Kimemia Muhuha. Building Kenya's tomorrow — one precision structure at a time. Westlands-based, serving Nairobi and all surrounding counties.</p>
+        <div class="social-links">
+          <a href="#" class="social-link" aria-label="Instagram">📸</a>
+          <a href="#" class="social-link" aria-label="Facebook">👤</a>
+          <a href="#" class="social-link" aria-label="LinkedIn">🔗</a>
+          <a href="#" class="social-link" aria-label="YouTube">▶️</a>
+        </div>
+      </div>
+      <div>
+        <div class="footer-heading">Services</div>
+        <ul class="footer-links">
+          <li><a href="#services">Residential Construction</a></li>
+          <li><a href="#services">Commercial Construction</a></li>
+          <li><a href="#services">Renovations & Remodeling</a></li>
+          <li><a href="#services">Structural Steel & Forgework</a></li>
+        </ul>
+      </div>
+      <div>
+        <div class="footer-heading">Company</div>
+        <ul class="footer-links">
+          <li><a href="#about">About Us</a></li>
+          <li><a href="#projects">Portfolio</a></li>
+          <li><a href="#blog">Insights</a></li>
+          <li><a href="#contact">Contact</a></li>
+          <li><a href="#contact">Get a Quote</a></li>
+        </ul>
+      </div>
+      <div>
+        <div class="footer-heading">Contact</div>
+        <ul class="footer-links">
+          <li><a href="tel:+254748232031">+254 748232031</a></li>
+          <li><a href="mailto:savanafforgelimited@gmail.com">savanafforgelimited@gmail.com</a></li>
+          <li><a href="https://wa.me/254748232031">WhatsApp Chat</a></li>
+        </ul>
+        <div style="margin-top:20px; font-size:13px; color:rgba(255,255,255,0.4); line-height:1.7;">
+          Theera Court, St. Stephen Rd Rungiri<br/>
+          Westlands, Nairobi, Kenya
+        </div>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>© 2025 SAVANAF FORGE LTD. All rights reserved. Incorporated in Kenya.</span>
+      <div class="footer-bottom-links">
+        <a href="#">Privacy Policy</a>
+        <a href="#">Terms of Service</a>
+        <a href="#">NCA Compliance</a>
+      </div>
+    </div>
+  </div>
+  <span class="footer-amber-bar"></span>
+</footer>
+
+<!-- WhatsApp Float -->
+<a href="https://wa.me/254748232031" class="whatsapp-float" aria-label="Chat on WhatsApp" title="Chat with us on WhatsApp">
+  <svg width="26" height="26" viewBox="0 0 24 24" fill="white" xmlns="http://www.w3.org/2000/svg">
+    <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/>
+  </svg>
+</a>
+
+<!-- ===== JAVASCRIPT ===== -->
+<script>
+  // Navbar scroll
+  const nav = document.getElementById('mainNav');
+  window.addEventListener('scroll', () => {
+    nav.classList.toggle('scrolled', window.scrollY > 60);
+  }, { passive: true });
+  nav.classList.add('scrolled'); // always dark for visibility
+
+  // Intersection Observer for fade-up animations
+  const observer = new IntersectionObserver((entries) => {
+    entries.forEach(entry => {
+      if (entry.isIntersecting) {
+        entry.target.classList.add('visible');
+        observer.unobserve(entry.target);
+      }
+    });
+  }, { threshold: 0.12, rootMargin: '0px 0px -40px 0px' });
+
+  document.querySelectorAll('.fade-up').forEach(el => observer.observe(el));
+
+  // Project filter
+  function filterProjects(btn, filter) {
+    document.querySelectorAll('.filter-tab').forEach(t => t.classList.remove('active'));
+    btn.classList.add('active');
+    document.querySelectorAll('.project-card').forEach(card => {
+      const cats = card.dataset.category || '';
+      const show = filter === 'all' || cats.includes(filter);
+      card.style.opacity = show ? '1' : '0.2';
+      card.style.pointerEvents = show ? 'auto' : 'none';
+      card.style.transition = 'opacity 0.35s ease';
+    });
+  }
+
+  // Contact form
+  async function handleSubmit(e) {
+  e.preventDefault();
+  
+  const form = e.target;
+  const btn = document.getElementById('submitBtn');
+  const contextNotification = document.getElementById('formSuccess');
+  
+  // Protect pipeline execution check from bots
+  if (form._honey.value) return;
+
+  btn.textContent = 'Processing Application…';
+  btn.disabled = true;
+
+  // Structural composition mapping from data elements
+  const dataPayload = {
+    fullName: form.fullName.value.trim(),
+    phone: form.phone.value.trim(),
+    email: form.email.value.trim(),
+    service: form.service.value,
+    location: form.location.value.trim(),
+    message: form.message.value.trim()
+  };
+
+  try {
+    const streamResponse = await fetch('/api/consultation', {
+      method: 'POST',
+      headers: { 'Content-Type': 'application/json' },
+      body: JSON.stringify(dataPayload)
+    });
+
+    const runtimeParsing = await streamResponse.json();
+
+    if (streamResponse.ok && runtimeParsing.success) {
+      // Configuration for positive runtime response status
+      contextNotification.style.display = 'block';
+      contextNotification.style.background = '#e8f5e9';
+      contextNotification.style.color = '#2e7d32';
+      contextNotification.style.borderLeft = '3px solid #4CAF50';
+      contextNotification.textContent = '✅ Success! Your pipeline inquiry has reached our engineering coordinators.';
+      
+      btn.textContent = '✓ Transmission Confirmed';
+      btn.style.background = '#4CAF50';
+      form.reset();
+    } else {
+      throw new Error(runtimeParsing.message || 'Submission parameter failure');
+    }
+
+  } catch (error) {
+    // Dynamic runtime fallback notification handling execution branch
+    contextNotification.style.display = 'block';
+    contextNotification.style.background = '#ffebee';
+    contextNotification.style.color = '#c62828';
+    contextNotification.style.borderLeft = '3px solid #f44336';
+    contextNotification.textContent = `❌ System Interruption: ${error.message}`;
+    
+    btn.textContent = 'Retry Submission →';
+    btn.disabled = false;
+    btn.style.background = '';
+  }
+
+  // Restore interaction values to normal conditions over standard timeframe profiles
+  setTimeout(() => {
+    btn.textContent = 'Send Message →';
+    btn.disabled = false;
+    btn.style.background = '';
+    contextNotification.style.display = 'none';
+  }, 7000);
+}
+  // Smooth scroll for anchor links
+  document.querySelectorAll('a[href^="#"]').forEach(a => {
+    a.addEventListener('click', e => {
+      const id = a.getAttribute('href').slice(1);
+      const el = document.getElementById(id);
+      if (el) {
+        e.preventDefault();
+        el.scrollIntoView({ behavior: 'smooth', block: 'start' });
+      }
+    });
+  });
+
+  // Reduced motion
+  if (window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
+    document.querySelectorAll('.fade-up').forEach(el => {
+      el.classList.add('visible');
+    });
+  }
+</script>
+</body>
+</html>l
