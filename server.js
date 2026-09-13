@@ -14,10 +14,11 @@ const app = express();
 const PORT = process.env.PORT || 8080;
 
 // Middleware stack config 
+// Middleware stack config 
 app.use(express.static(join(__dirname, 'public')));
+app.use(express.static(join(__dirname, 'views'))); // <-- Add this line to serve files inside views/
 app.use(express.urlencoded({ extended: true }));
 app.use(express.json());
-
 // Main structural presentation stream
 app.get('/', (req, res) => {
     res.sendFile(join(__dirname, 'views', 'index.html'));
